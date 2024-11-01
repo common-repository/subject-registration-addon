@@ -1,0 +1,223 @@
+
+
+.rynerg_rsgsrf{
+    padding: 10px;
+    position: relative;
+}
+.rsgsrf_admin{
+    width:auto;
+    position: relative;
+}
+/*TAB BUTTONS*/
+.rsgsrf_admin .rsgsrf__contents_table{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width:auto;
+    background: #229dd8;
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+}
+.rsgsrf_admin .rsgsrf__contents_main{
+    padding: 10px;
+    width:auto;
+    background: #fff;
+    position: relative;   
+}
+/*SINLGE POSTS ADMIN*/
+.rsgsrf_contents_single .rsgsrf__contents_main .rsgsrf__contents_main{
+    width: 40%;
+    display: inline-block;
+    margin: auto;
+}
+.rsgsrf_contents_single .rsgsrf__contents_main .rsgsrf_reg_title{
+    width: 80%;
+}
+/*OPTIONS*/
+.rsgsrf__content_option{
+    cursor: pointer;
+    font-size: 15px;
+}
+.rsgsrf__content_edit{
+    color: #0073aa;
+}
+
+.rsgsrf__content_del{
+    color: #ff0000;
+}
+
+/*TAB CONTENTS*/
+.rsgsrf_admin .rsgsrf_tab_content{
+    display: none;
+}
+.rsgsrf_admin .rsgsrf_tab_content.this_opened{
+    display: block;
+}
+.rsgsrf_admin .rsgsrf_tab_content .rsgsrf_p{
+    font-size: 15px;
+    display: block;
+}
+.rsgsrf_p_con_full{
+    background: #eee;
+    overflow: hidden;
+    width: 100%;
+}
+.rsgsrf_p_con{
+    width: 50%;
+    background: #eee;
+    overflow: hidden;
+}
+
+@media( max-width: 800px ){
+    .rsgsrf_p_con{
+        width: 100%;
+        display: block;
+    }
+}
+.rsgsrf__i{
+    background: #fff;
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    color: #222;
+    padding-left: 10px;
+    transition: ease .4s; -webkit-transition: ease .4s;
+    background: #229dd8;
+    color: #fff;
+    border-bottom: 1px solid;
+}
+.rsgsrf__i:hover{
+    transition: ease .4s; -webkit-transition: ease .4s;
+}
+
+.rsgsrf_p input{
+    width: 100%;
+    display: block;
+    border: 1px solid #c1bcbc;
+    padding: 10px;
+    font-weight: 600;
+}
+.rsgsrf_crud_options{
+    cursor: pointer; font-weight: 700;
+}
+
+/*SELECT FORM FIELDS*/
+.rsgsrf_select_content span{
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #0073aa;
+    transition: ease .4s; -webkit-transition: ease .4s;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.rsgsrf_select_content span:hover{
+    transition: ease .4s; -webkit-transition: ease .4s;
+    color: #0073aa;
+}
+.rsgsrf_select_content span i{
+    display: none;
+}
+.rsgsrf_select_content span.selected{
+    font-weight: 800;
+}
+.rsgsrf_select_content span.selected i{
+    display: inline-block;
+}
+
+/*TUTORING TYPES*/
+.rsgsrf_tu_type_edit{
+    color: #229dd8;
+}
+.rsgsrf_tu_type_del{
+    color: #dc3232;
+}
+
+/*SCHOOL LEVELS*/
+.rsgsrf_school_lvl_edit{
+    color: #229dd8;
+}
+.rsgsrf_school_lvl_del{
+    color: #dc3232;
+}
+/*SAVE BUTTON*/
+.rsgsrf_btn_submit{
+    transition: ease .4s; -webkit-transition: ease .4s;
+    padding: 5px 50px;
+    background: #229dd8;
+    border: 2px solid #229dd8;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+.rsgsrf_btn_submit:hover{
+    transition: ease .4s; -webkit-transition: ease .4s;
+    color: #229dd8;
+    background: #fff;
+}
+
+/*MODAL FOR ADDING SUBJECT*/
+.rsgsrf__modal{
+    position: fixed;
+    z-index: 9999999999;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.rsgsrf_modal_content{
+    min-height: 100px;
+    background: #fff;
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    top: 10%;
+    overflow: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.rsgsrf_modal_title{
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    font-weight: 600;
+    border-bottom: 1px solid #229dd8;
+}
+
+.rsgsrf__modal_lvl_select span{ cursor: pointer; transition: ease .4s; -webkit-transition: ease .4s;}
+i.rsgsrf_error{
+    display: none;
+    color: red;
+}
+
+
+
+
+
+
+/*HIDE OTHER FIELDS FOR THE POST*/
+
+body.post-type-rsgsrf #poststuff .postarea.wp-editor-expand,
+body.post-type-rsgsrf #edit-slug-box,
+body.post-type-rsgsrf #screen-meta-links,
+body.post-type-rsgsrf #menu-posts-rsgsrf > ul > li:nth-child(3){
+    display: none !important;
+}
+
+
+/*HELP PAGE*/
+.rsgsrf_help_page .rsgsrf_reg_title{
+    color: #0073aa;
+    background: #ddd;
+    padding: 5px 20px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
